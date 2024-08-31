@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone LUK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+        <h1 class="page-title">Iphone LUK</h1>
+        <div class="header-content">
+            <div class="header-left">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="catalogo.html" target="_blank">Catálogo</a></li>
+                        <li><a href="iphones.html" target="_blank">Iphones</a></li>
+                        <li><a href="applewatch.html" target="_blank">Apple Watch</a></li>
+                        <li><a href="macs.html" target="_blank">Mac</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-separator"></div>
+            <div class="nav-divider"></div>
+            <div class="header-right">
+                <button id="open-register-btn" class="register-btn">Registrarse</button>
+                <button id="open-login-btn" class="login-btn">Iniciar sesión</button>
+            </div>
+        </div>
+</header>
+
+<!-- FORMULARIO DE REGISTRO -->
+
+<div id="register-form-container" class="form-container hidden">
+    <section class="form-content">
+        <h2>Regístrese aquí debajo</h2>
+        <form id="registration-form">
+            <label for="register-email">Correo electrónico:</label>
+            <input type="email" id="register-email" required placeholder="Ingrese su correo">
+
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" required placeholder="Ingrese su contraseña" minlength="5">
+
+            <label for="register-dob">Fecha de nacimiento:</label>
+            <input type="date" id="register-dob" required>
+
+            <label for="register-nationality">Nacionalidad:</label>
+            <select id="register-nationality">
+                <option value="arg">Argentino</option>
+                <option value="extr">Extranjero</option>
+            </select>
+            <button type="submit" class="submit-btn">Registrarse</button>
+        </form>
+        <button id="close-register-btn" class="close-btn">&times;</button>
+    </section>
+</div>
+
+<!-- FORMULARIO DE INICIO DE SESION -->
+<div id="login-form-container" class="form-container hidden">
+    <section class="form-content">
+        <h2>Inicie sesión aquí debajo</h2>
+        <form id="login-form">
+            <label for="login-email">Correo electrónico:</label>
+            <input type="email" id="login-email" required placeholder="Ingrese su correo">
+
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" required placeholder="Ingrese su contraseña">
+
+            <button type="submit" class="submit-btn">Iniciar sesión</button>
+        </form>
+        <a href="#" class="forgot-password">Olvidaste tu contraseña?</a>
+        <button id="close-login-btn" class="close-btn">&times;</button>
+    </section>
+</div>
+
+<main>
+        <h2 class="titulo-iphone16">¿Ya viste el nuevo iPhone 16? Está llegando. </h2>
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="img/nuevoiphone.png">
+            </div>
+            <div class="grid-item">
+                <img src="img/nuevoihpone2.jpeg">
+            </div>
+            <div class="grid-item">
+                <img src="img/nuevoiphone3.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/nuevoiphone4.png">
+            </div>
+        </section>
+        <br><br>
+        <section class="mac-section">
+            <h2 class="titulo-mac">También tenemos la MacBook Pro con M2 Pro</h2>
+            <br><br>
+            <div class="grid-container-mac">
+                <div class="grid-mac">
+                    <img src="img/macmain1.jpg">
+                </div>
+                <div class="grid-mac">
+                    <img src="img/macmain2.jpg">
+                </div>
+            </div>
+            <div class="mac-specs">
+                <h3>Especificaciones y Características</h3>
+                <p>La nueva MacBook Pro con chip M2 Pro combina un rendimiento potente con una eficiencia increíble, 
+                    ideal para profesionales y creativos. Diseñada para aquellos que necesitan la máxima velocidad y capacidad.</p>
+                    <ul>
+                        <li><strong>Procesador:</strong> Apple M2 Pro con 10 núcleos</li>
+                        <li><strong>Memoria RAM:</strong> 16 GB unificada</li>
+                        <li><strong>Almacenamiento:</strong> SSD de 512 GB</li>
+                        <li><strong>Pantalla:</strong> Retina de 14 pulgadas con resolución 3024 x 1964</li>
+                        <li><strong>Gráficos:</strong> GPU de 16 núcleos</li>
+                        <li><strong>Duración de la batería:</strong> Hasta 17 horas de reproducción de video</li>
+                        <li><strong>Puertos:</strong> Thunderbolt 4, HDMI, ranura para tarjeta SDXC</li>
+                        <li><strong>Sistema operativo:</strong> macOS Monterey</li>
+                    </ul>
+            </div>
+        </section>
+        <br><br><br>
+        <section class="watch-section">
+            <h2 class="titulo-watch">Y recientemente ingreso a nuestro local el Apple Watch ultra 2</h2>
+            <h4>con 2 modelos distintos</h4>
+            <br><br>
+            <div class="grid-container-watch">
+                <div class="grid-watch">
+                    <img src="img/applewatch1.jpg">
+                </div>
+                <div class="grid-watch">
+                    <img src="img/applewatch4.jpg">
+                </div>
+            </div>
+            <div class="watch-specs">
+                <h3>Especificaciones y Características</h3>
+                <p>El Apple Watch Ultra 2 ofrece un diseño robusto y características avanzadas, perfecto para aventureros y atletas. Equipado con la última tecnología para seguir el ritmo de tus actividades más exigentes.</p>
+                <ul>
+                    <li><strong>Pantalla:</strong> Retina LTPO OLED de 49 mm</li>
+                    <li><strong>Procesador:</strong> Chip S9 con mejor rendimiento</li>
+                    <li><strong>Memoria:</strong> 32 GB de almacenamiento interno</li>
+                    <li><strong>Conectividad:</strong> GPS, LTE, Wi-Fi, Bluetooth 5.3</li>
+                    <li><strong>Resistencia al agua:</strong> Hasta 100 metros</li>
+                    <li><strong>Duración de la batería:</strong> Hasta 36 horas con uso intensivo</li>
+                    <li><strong>Sensores:</strong> Sensor de frecuencia cardíaca, oxímetro de pulso, altímetro</li>
+                    <li><strong>Sistema operativo:</strong> watchOS 10</li>
+                </ul>
+            </div>
+        </section>
+        <section class="descripcion-final">
+            <p>¿Quieres explorar más dispositivos? Encuentra exactamente lo que buscas en nuestro catálogo. Usa la barra de búsqueda o navega por nuestras categorías para descubrir todo lo que ofrecemos.</p>
+        </section>
+</main>
+<footer>
+        <section class="final">
+            <h2>¿Quién soy?</h2>
+            <div class="presentacion">
+                <img src="img/l.jpg" class="foto1">
+                <p> Hola, me llamo Luka Eyherabides. Tengo 21 años, 
+                    soy estudiante de programación e ingeniería en sistemas.
+                    Vivo en la Emilia y emprendo desde los 18 años, 
+                    vendiendo dispositivos Apple, que es lo que más me gusta y conozco mucho 
+                    del tema. Cualquier duda que tengas, no dudes en contactarte conmigo.</p>
+            </div>
+        </section>
+        <section class="contactos">
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>Gmail</li>
+            </ul>
+        </section>
+</footer>
+<script src="js/register.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
